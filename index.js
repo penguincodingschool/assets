@@ -1,15 +1,38 @@
+const prefix = "https://github.com/penguincodingschool/assets/raw/main/assets/"
+
 const links = {
     "audio": {
-        "point": "https://github.com/penguincodingschool/assets/raw/main/point.ogg",
-        "fly" : "https://github.com/penguincodingschool/assets/raw/main/fly.ogg",
-        "smack": "https://github.com/penguincodingschool/assets/raw/main/crash.ogg",
-        "sad": "https://github.com/penguincodingschool/assets/raw/main/sad.ogg",  
-        "swoosh": "https://github.com/penguincodingschool/assets/raw/main/swoosh.ogg",          
+        "point": "point.ogg",
+        "fly" : "fly.ogg",
+        "smack": "crash.ogg",
+        "sad": "sad.ogg",  
+        "swoosh": "swoosh.ogg",          
     },
     "images": {
-        "Detailed USA":"https://github.com/penguincodingschool/assets/raw/main/map_of_usa.jpg",
-        "Treasure Map 1": 'https://github.com/penguincodingschool/assets/raw/main/treasure1.jpg',
-        "Old Istanbul":'https://github.com/penguincodingschool/assets/raw/main/konstantinopel.jpg',
+        "Detailed USA": "map_of_usa.jpg",
+        "Treasure Map 1": "treasure1.jpg",
+        "Old Istanbul": "konstantinopel.jpg",
+        "Bamboo": "bamboo.png",
+        "Bamboo 1": "bamboo1.png",
+        "Beetle": "beetle.png",
+        "Forest": "forest.jpeg",
+        "Forest1": "forest1.jpeg",
+        "Forest2": "forest2.png",
+        "Grass": "grass.jpeg",
+        "Happy": "happy.png",
+        "Mall": "mall.jpeg",
+        "Mountain": "mountain.jpeg",
+        "Mountain 1": "mountain1.jpeg",
+        "Mountain 1.1": "mountain.png",
+        "My store": "mystore.png",
+        "Ocean": "ocean.jpeg",
+        "Panda": "panda.png",
+        "Red Panda": "redpanda.png",
+        "Sad": "sad.png",
+        "Shield":"shield.png",
+        "Snow Leopard":"snowleopard.png",
+        "Store": "store.png",
+        "Sword 1": "sword1.png",
     }
 };
 
@@ -108,13 +131,13 @@ function getImageContainer(name, link){
 document.body.onload = function(){
     const acontainer = document.getElementById("container-audios");
     for (const audio in links["audio"]){
-        let el = getAudioContainer(audio, links["audio"][audio]);
+        let el = getAudioContainer(audio, prefix + links["audio"][audio]);
         //console.log(audio)
         acontainer.appendChild(el);
     }
     const icontainer = document.getElementById("container-images");
     for (const image in links["images"]){
-        let el = getImageContainer(image, links["images"][image]);
+        let el = getImageContainer(image, prefix + links["images"][image]);
         //console.log(audio)
         icontainer.appendChild(el);
     }
