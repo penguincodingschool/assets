@@ -23,7 +23,7 @@ const links = {
         "Mall": "mall.jpeg",
         "Mountain": "mountain.jpeg",
         "Mountain 1": "mountain1.jpeg",
-        "Mountain 1.1": "mountain.png",
+        "Mountain 1.1": "mountain1.png",
         "My store": "mystore.png",
         "Ocean": "ocean.jpeg",
         "Panda": "panda.png",
@@ -31,7 +31,7 @@ const links = {
         "Sad": "sad.png",
         "Shield":"shield.png",
         "Snow Leopard":"snowleopard.png",
-        "Store": "store.png",
+        "Store": "store.jpeg",
         "Sword 1": "sword1.png",
     }
 };
