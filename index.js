@@ -33,6 +33,8 @@ const links = {
         "Snow Leopard":"snowleopard.png",
         "Store": "store.jpeg",
         "Sword 1": "sword1.png",
+        "Black Invader": "black_invader.png",
+        "Green Invader": "green_invader.png",
     }
 };
 
