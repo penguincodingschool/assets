@@ -74,10 +74,13 @@ audio{
 }
 
 .title-container{
-    flex: none; /* is a child of .audio-container */
+    flex: 0 1 auto; /* is a child of .audio-container */
     display: flex; /* works in tandem with align-items to vertically center */
-    align-items: center;    
-    font-size: 2em;
+    align-items: center;
+    font-size: 130%;
+    overflow-x: clip;
+    overflow-y: hidden;
+    margin: 0px 1em 0px 1em;
 }
 
 .imagetitle{
