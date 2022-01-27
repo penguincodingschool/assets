@@ -58,9 +58,16 @@ function getAudioContainer(name, link){
     playButton.src = "play.svg"
     playButton.classList.add('list-img')
     playButton.onclick = function(){
-        playButton.src = "sound.gif"
-        audio.currentTime = 0
-        audio.play()
+        if (!audio.paused){
+            playButton.src = "sound.gif"
+            audio.currentTime = 0
+            audio.play()
+        }else{
+            playButton.src = "play.svg"
+            audio.currentTime = 0
+            audio.pause()
+        }
+        
     }
 
     audio.onended = function(){
